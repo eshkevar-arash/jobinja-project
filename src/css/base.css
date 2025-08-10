@@ -1,0 +1,15 @@
+body{
+       @apply font-IRANSansX bg-white;
+}
+select {
+  -moz-appearance: none; /* برای موزیلا */
+  appearance: none;
+}
+hr{
+  @apply border-b-0 w-full h-0 border-gray-300
+}
+a {
+    @apply no-underline;
+  }
+
+

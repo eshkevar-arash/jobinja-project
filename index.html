@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobinja Project</title>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link href="public/css/plugins/choices.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <header class="header w-full fixed top-0 left-0 z-50 h-[70px] bg-c444">
+        <div class="container h-full">
+            <nav class="mobile-nav w-full max-w-180 mx-auto h-full flex items-center justify-between lg:hidden relative gap-5">
+                <button class="mobile-nav__btn size-8 outline-0 bg-c555 rounded-sm overflow-hidden flex flex-col gap-1 items-center justify-center cursor-pointer">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+                <a href="#" class="size-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </a>
+                <div class="grow flex justify-center items-center h-full">
+                    <a href="#" class="block h-full w-[70px]">
+                        <img src="public/images/logo.webp" class="size-full object-contain">
+                    </a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="mobile-message relative size-8 cursor-pointer flex items-center justify-center text-gray-400 hover:text-white transition-colors ">
+                        <span class="absolute font-bold py-px pointer-events-none px-1 left-1  -top-1  text-xx bg-cc93d31 text-white block rounded-[3px] ">1</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mobile-message__svg size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                        </svg>
+                        <ul class="mobile-message__list  w-[270px] bg-c333 text-white rounded-sm absolute top-full -left-2 transition-all opacity-0 invisible">
+                            <li class="mobile-message__item border-b border-c444">
+                                <a href="#" class="desktop-message__link  py-[10px] px-[15px] transition-colors text-ce5e5e5 hover:text-white hover:[&>span:last-child]:text-c1988b8 hover:bg-c222 flex flex-col gap-0.5 text-xs">
+                                    <span class="">جابینجا چطور یه لستخدام شدن من کمک میکند</span>
+                                    <span class="text-c3ab1e4 text-sm">مشاهده</span>
+                                </a>
+                            </li>
+                            <li class="mobile-message__item ">
+                                <a href="#" class="mobile-message__link block text-xs font-black py-[10px] px-[15px] transition-colors text-center text-c3ab1e4 hover:text-c1988b8 hover:bg-c222">مشاهده بیشتر</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-user relative size-8 cursor-pointer flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mobile-user__svg size-5 ">
+                            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                        </svg>
+                        <ul class="mobile-user__list  w-50 bg-c333  rounded-sm absolute top-full -left-2 transition-all opacity-0 invisible">
+                            <li class="mobile-user__item border-b border-c444">
+                                <a href="#" class="mobile-user__link block text-xs py-[10px] px-[15px] text-ce5e5e5 hover:text-white transition-colors hover:bg-c222">ورود کارجو</a>
+                            </li>
+                            <li class="mobile-user__item ">
+                                <a href="#" class="mobile-user__link block text-xs py-[10px] px-[15px] text-ce5e5e5 hover:text-white transition-colors hover:bg-c222">ثبت نام کارجو</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <ul class="mobile-nav__list w-full absolute top-full left-0 bg-c555 max-h-0   invisible transition-all duration-300 overflow-hidden"> 
+                    <li class="mobile-nav__item  border-b border-c666">
+                        <a href="#" class="mobile-nav__link py-[15px] px-5 flex items-center justify-start gap-1 mobile-nav__link--active hover:bg-c505050">
+                            <img src="public/images/icon/icons8-home-94.png" alt="" class="size-5">
+                            <span class="text-white font-bold text-xs tracking-wide">خانه</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav__item  border-b border-c666">
+                        <a href="#" class="mobile-nav__link py-[15px] px-5 flex items-center justify-start gap-1 hover:bg-c505050">
+                            <img src="public/images/icon/icons8-search-50.png" alt="" class="size-5">
+                            <span class="text-white font-bold text-xs tracking-wide">جستجوی مشاغل</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav__item  border-b border-c666">
+                        <a href="#" class="mobile-nav__link py-[15px] px-5 flex items-center justify-start gap-1 hover:bg-c505050">
+                            <img src="public/images/icon/icons8-popular-man-94.png" alt="" class="size-5">
+                            <span class="text-white font-bold text-xs tracking-wide">رزومه ساز</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav__item  border-b border-c666">
+                        <a href="#" class="mobile-nav__link py-[15px] px-5 flex items-center justify-start gap-1 hover:bg-c505050">
+                            <img src="public/images/icon/icons8-diamond-48.png" alt="" class="size-5">
+                            <span class="text-white font-bold text-xs tracking-wide">۵۰ شرکت برتر</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav__item  border-b border-c666">
+                        <a href="#" class="mobile-nav__link py-[15px] px-5 flex items-center justify-start gap-1 hover:bg-c505050">
+                            <img src="public/images/icon/businessman.png" alt="" class="size-5">
+                            <span class="text-white font-bold text-xs tracking-wide">بخش کارفرمایان</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="desktop-nav hidden lg:flex h-full items-center gap-3">
+                <ul class="desktop-nav__menu flex h-full">
+                    <li class="desktop-nav__item h-full">
+                        <a href="#" class="desktop-nav__link text-ce5e5e5 hover:text-white text-sm border-r border-gray-500 font-medium h-full px-4 flex items-center justify-center hover:bg-c505050 transition-colors gap-[5px] desktop-nav__link--active">
+                            <img src="public/images/icon/icons8-home-94.png" class="size-4">
+                            خانه
+                        </a>
+                    </li>
+                    <li class="desktop-nav__item h-full">
+                        <a href="#" class="desktop-nav__link text-ce5e5e5 hover:text-white text-sm border-r border-gray-500 font-medium h-full px-4 flex items-center justify-center hover:bg-c505050 transition-colors gap-[5px]">
+                            <img src="public/images/icon/icons8-search-50.png" class="size-4">
+                            جستجوی مشاغل
+                        </a>
+                    </li>
+                    <li class="desktop-nav__item h-full">
+                        <a href="#" class="desktop-nav__link text-ce5e5e5 hover:text-white text-sm border-r border-gray-500 font-medium h-full px-4 flex items-center justify-center hover:bg-c505050 transition-colors gap-[5px]">
+                            <img src="public/images/icon/icons8-popular-man-94.png" class="size-4">
+                            رزومه ساز
+                        </a>
+                    </li>
+                    <li class="desktop-nav__item h-full">
+                        <a href="#" class="desktop-nav__link text-ce5e5e5 hover:text-white text-sm border-r border-gray-500 font-medium h-full px-4 flex items-center justify-center hover:bg-c505050 transition-colors gap-[5px]">
+                            <img src="public/images/icon/icons8-diamond-48.png" class="size-4">
+                             ۵۰ شرکت برتر
+                        </a>
+                    </li>
+                    <li class="desktop-nav__item h-full">
+                        <a href="#" class="desktop-nav__link text-ce5e5e5 hover:text-white text-sm border-r border-gray-500 font-medium h-full px-4 flex items-center justify-center hover:bg-c505050 transition-colors gap-[5px]">
+                            <img src="public/images/icon/businessman.png" class="size-4">
+                            بخش کارفرمایان
+                        </a>
+                    </li>
+                </ul>
+                <div class="desktop-message relative size-8 cursor-pointer flex items-center justify-center text-gray-400 hover:text-white transition-colors mr-auto">
+                    <span class="absolute font-bold py-px pointer-events-none px-1 left-1  -top-1  text-xx bg-cc93d31 text-white block rounded-[3px] ">1</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="desktop-message__svg size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                    </svg>
+                    <ul class="desktop-message__list  w-[270px] bg-c333  rounded-sm absolute top-full -left-2 transition-all opacity-0 invisible">
+                        <li class="desktop-message__item border-b border-c444">
+                            <a href="#" class="desktop-message__link  py-[10px] px-[15px] transition-colors text-ce5e5e5 hover:text-white hover:[&>span:last-child]:text-c1988b8 hover:bg-c222 flex flex-col gap-0.5 text-xs">
+                                <span class="">جابینجا چطور یه لستخدام شدن من کمک میکند</span>
+                                <span class="text-c3ab1e4 text-sm">مشاهده</span>
+                            </a>
+                        </li>
+                        <li class="desktop-message__item ">
+                            <a href="#" class="desktop-message__link block text-xs font-black py-[10px] px-[15px] transition-colors text-center text-c3ab1e4 hover:text-c1988b8 hover:bg-c222">مشاهده بیشتر</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center gap-1 text-ce5e5e5 hover:text-white transition-colors text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 text-gray-400">
+                            <path d="M10 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.465 14.493a1.23 1.23 0 0 0 .41 1.412A9.957 9.957 0 0 0 10 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 0 0-13.074.003Z" />
+                        </svg>
+                        ثبت نام کارجو
+                    </a>
+                    <a href="#" class="flex items-center gap-1 text-ce5e5e5 hover:text-white transition-colors text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 text-gray-400">
+                            <path fill-rule="evenodd" d="M18 5.25a2.25 2.25 0 0 0-2.012-2.238A2.25 2.25 0 0 0 13.75 1h-1.5a2.25 2.25 0 0 0-2.238 2.012c-.875.092-1.6.686-1.884 1.488H11A2.5 2.5 0 0 1 13.5 7v7h2.25A2.25 2.25 0 0 0 18 11.75v-6.5ZM12.25 2.5a.75.75 0 0 0-.75.75v.25h3v-.25a.75.75 0 0 0-.75-.75h-1.5Z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M3 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm6.874 4.166a.75.75 0 1 0-1.248-.832l-2.493 3.739-.853-.853a.75.75 0 0 0-1.06 1.06l1.5 1.5a.75.75 0 0 0 1.154-.114l3-4.5Z" clip-rule="evenodd" />
+                        </svg>
+                        ورود کارجو
+                    </a>
+                </div>
+                <div class="brand border-x border-gray-500 h-full">
+                    <a href="#" class="px-5 block h-full">
+                        <img src="public/images/logo.webp" class="w-[70px] h-full object-contain">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main mt-[70px]">
+        <div class="home-header bg-custom-gradient w-full py-5">
+    <div class="container">
+        <div class="w-full max-w-[1150px] mx-auto">
+            <div class="home-header__header text-white my-6">
+                <h1 class="home-header__title-1 text-center text-sm font-medium lg:text-xl">
+                    <a href="#" class="underline font-bold">۱۴,۸۳۸</a>
+                    <span> آگهی استخدام فعال در</span>
+                    <a href="#" class="underline font-bold">۷,۰۱۴</a>
+                    <span>شرکت ایرانی</span>
+                </h1>
+                <h2 class="home-header__title-2 text-center opacity-70 font-bold text-xs mt-[10px] sm:text-sm">
+                    جابینجا: سامانه کاریابی آنلاین با بیشترین تعداد آگهی استخدام در ایران
+                </h2>
+            </div>
+            <form id="headerForm" class="mt-5 flex flex-col gap-3 lg:gap-2 relative lg:flex-row">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-3.5 right-2 text-gray-400">
+                    <path fill="currentColor" d="M14.7 15.75L9.975 11.025C9.6 11.325 9.16875 11.5625 8.68125 11.7375C8.19375 11.9125 7.675 12 7.125 12C5.7625 12 4.6095 11.5282 3.666 10.5847C2.722 9.64075 2.25 8.4875 2.25 7.125C2.25 5.7625 2.722 4.60925 3.666 3.66525C4.6095 2.72175 5.7625 2.25 7.125 2.25C8.4875 2.25 9.64075 2.72175 10.5847 3.66525C11.5282 4.60925 12 5.7625 12 7.125C12 7.675 11.9125 8.19375 11.7375 8.68125C11.5625 9.16875 11.325 9.6 11.025 9.975L15.75 14.7L14.7 15.75ZM7.125 10.5C8.0625 10.5 8.8595 10.172 9.516 9.516C10.172 8.8595 10.5 8.0625 10.5 7.125C10.5 6.1875 10.172 5.3905 9.516 4.734C8.8595 4.078 8.0625 3.75 7.125 3.75C6.1875 3.75 5.3905 4.078 4.734 4.734C4.078 5.3905 3.75 6.1875 3.75 7.125C3.75 8.0625 4.078 8.8595 4.734 9.516C5.3905 10.172 6.1875 10.5 7.125 10.5Z"/>
+                </svg>
+                <input type="text" class="home-header__input text-c666 font-medium h-11 pr-9 bg-white font-IRANSansX outline-0 border border-ce5e5e5 lg:grow rounded-sm text-sm" placeholder="عنوان شغلی، نام شرکت، مهارت، یا ...">
+                <div class="hidden lg:block grow h-11 bg-white rounded-sm relative">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute z-20 top-3 pointer-events-none c-jobSearchTop__blockIcon right-1">
+                        <g clip-path="url(#clip0_232_2973)">
+                            <path d="M9.33331 1.5C6.43081 1.5 4.08331 3.8475 4.08331 6.75C4.08331 10.6875 9.33331 16.5 9.33331 16.5C9.33331 16.5 14.5833 10.6875 14.5833 6.75C14.5833 3.8475 12.2358 1.5 9.33331 1.5ZM9.33331 8.625C8.29831 8.625 7.45831 7.785 7.45831 6.75C7.45831 5.715 8.29831 4.875 9.33331 4.875C10.3683 4.875 11.2083 5.715 11.2083 6.75C11.2083 7.785 10.3683 8.625 9.33331 8.625Z" fill="#A5A5A5"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_232_2973">
+                                <rect width="18" height="18" fill="white" transform="translate(0.333313)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <select id="provinceSelect" dir="rtl" class="w-full max-w-[297.4px]">
+                         
+                    </select>
+                    <svg id="provinceIconDown" class="absolute top-3 left-2 z-20 pointer-events-none transition-transform" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a5a5a5">
+                        <path d="M6 9l6 6 6-6" stroke="#a5a5a5" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="hidden lg:block grow h-11 bg-white rounded-sm relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-4 absolute z-20 top-3 pointer-events-none right-1.5 text-gray-600">
+                        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                    </svg>
+
+                    <select id="categorySelect" dir="rtl" class="w-full max-w-[297.4px]">
+                         
+                    </select>
+                    <svg id="jobCategoriesIconDown" class="absolute top-3 left-2 z-20 pointer-events-none transition-transform" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a5a5a5">
+                        <path d="M6 9l6 6 6-6" stroke="#a5a5a5" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <button type="submit" id="home-header__btn" class="flex items-center justify-center text-c222 text-xs tracking-tight font-bold shadow-btn-header rounded-sm cursor-pointer outline-none h-11 bg-cffcd70 transition-colors hover:bg-cffd68a lg:w-[150px]">جستجو در مشاغل</button>
+            </form>
+            <div class="flex justify-center w-full mt-5">
+                <a href="#" class="text-white text-sm flex items-center gap-0.5 font-bold">
+                    مشاهده همه آگهی های استخدام
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+        </div>
+        <section class="my-12 w-full section-brand">
+    <div class="container">
+        <div class="flex">
+            <div class="w-10 h-full hidden lg:block">
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper SwiperBrand grow">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-1.png" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">6 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">مهندسی فن آوری اطلاعات پرتو بیتا</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-2.png" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">4 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">زرین پال</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-3.jpg" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">4 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">شرکت 3</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-4.jpg" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">4 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">شرکت 4</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-5.jpg" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">4 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">شرکت 5</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-6.png" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">8 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">شرکت 6</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-7.png" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">2 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">شرکت 7</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-8.png" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">9 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">شرکت 8</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-9png.png" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">9 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">شرکت 8</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="brand-card hover:[&>p:last-child]:text-c1988b8 ">
+                            <img src="public/images/brand/brand-10.jpg" class="w-[70%] rounded-sm object-cover mx-auto">
+                            <p class="text-center px-2 text-xs text-ca5a5a5">1 فرصت شغلی</p>
+                            <p class="text-center px-2 text-[0.65rem] font-bold text-c3ab1e4 transition-colors">شرکت 10</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10 h-full hidden lg:block">
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+        </section>
+        <section class="sectiov-guestUser w-full mb-12">
+            <div class="container">
+                <div class="guest-user bg-gray-100 p-5 rounded-[10px] grid grid-cols-1 gap-5 mmd:grid-cols-[2fr_1fr] mmd:grid-rows-[auto_auto] lg:grid-cols-[2fr_auto_1fr] lg:grid-rows-1">
+                    <div class="flex items-center gap-1 lg:col-span-1">
+                        <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            viewBox="0 0 503.322 503.322" xml:space="preserve" class="w-9 h-10">
+                            <!-- svg paths unchanged -->
+                        </svg>
+                        <p class="grow text-c777  text-sm">همین حالا در جابینجا ثبت‌نام کن و رزومه‌ات رو برای استخدام در شرکت‌های معتبر بفرست.</p>
+                    </div>
+                    <div class="flex items-center gap-3 lg:col-start-3">
+                        <button type="button" class="cursor-pointer grow outline-none focus:outline-none bg-c1abc9c ring-1 ring-c1abc9c hover:bg-c1dd3af hover:ring-c1dd3af h-8 flex items-center justify-center font-bold text-xs text-white transition-colors rounded-sm">ثبت نام کارجو</button>
+                        <button type="button" class="cursor-pointer grow outline-none focus:outline-none bg-white ring-1 ring-c1abc9c hover:ring-c1dd3af hover:bg-gray-50 h-8 flex items-center justify-center font-bold text-xs text-c1abc9c hover:text-c1dd3af transition-colors rounded-sm">ورود کارجو</button>
+                    </div>
+                    <div class="flex items-center justify-center gap-1.5 mmd:col-start-2 mmd:col-span-1 lg:col-start-2 lg:row-start-1 max-mmd:border-t max-mmd:border-gray-300 max-mmd:pt-5 max-mmd:pb-2">
+                        <span class="text-c777 text-xs">کارفرما هستید؟</span>
+                        <a href="#" class="flex items-center text-c3ab1e4 font-bold hover:text-c1988b8 transition-colors max-xl:text-xs text-xs">
+                            ایجاد اگهی استخدام
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lastOpening-section w-full mb-12">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class=" text-c555 text-base lg:text-base  font-medium ">آخرین آگهی ها</h3>
+                    <a href="#" class="flex items-center gap-px font-bold  text-sm text-c3ab1e4 hover:text-c1988b8 transition-colors">
+                        <span>مشاهده همه</span>
+                        <span>(۱۴,۲۲۷)</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="swiper mobile-lastOpening block lg:!hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="Swiper-lastOpening__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-1.png" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch h-full">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 1
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق با مزایا و پاداش از 
+                                                <span>14,000,000</span>
+                                                <span>تومان</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency !hidden">فوری</span>
+                                        <span class="normal-post text-c777 text-sm">۹ ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip">
+                                    <span>14,000,000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="Swiper-lastOpening__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-2.png" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch h-full">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 2
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق با مزایا و پاداش از 
+                                                <span>20,000,000</span>
+                                                <span>تومان</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden text-sm">۹ ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip">
+                                    <span>20,000,000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="Swiper-lastOpening__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-3.jpg" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch h-full">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 3
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق توافقی
+                                                <span></span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency !hidden">فوری</span>
+                                        <span class="normal-post text-c777 text-sm">۹ ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="Swiper-lastOpening__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-4.jpg" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch h-full">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 4
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق از 
+                                                <span>16،000،000</span>
+                                                <span>تومان</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">1 ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span>16،000،000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="Swiper-lastOpening__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-5.jpg" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch h-full">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 5
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق و مزایا طبق اداره کار به همراه بیمه 
+                                                <span></span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">1 ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="Swiper-lastOpening__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-6.png" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch h-full">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 6
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق و مزایا طبق اداره کار به همراه بیمه 
+                                                <span></span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">1 ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="Swiper-lastOpening__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-7.png" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch h-full">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 7
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق و مزایا طبق اداره کار به همراه بیمه 
+                                                <span></span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">1 ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="desktop-lastOpening hidden lg:grid grid-cols-3 gap-5 xl:gap-9 2xl:grid-cols-4">
+                    <div class="box ">
+                       <a href="#" class="box__link group relative">
+                            <div class="flex items-start">
+                                <img class="w-full rounded-sm" src="public/images/brand/brand-1.png" alt="">
+                            </div>
+                            <div class="flex flex-col justify-between items-stretch space-y-6">
+                                <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                <div class="text-c777 text-sm space-y-1">
+                                    <p class="flex items-center gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                        </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                            شرکت 1
+                                            </span>
+                                    </p>
+                                    <p class="flex items-center gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                تهران،تهران
+                                        </span>
+                                    </p>
+                                    <div class="flex items-center gap-1 w-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                            <path d="M14 2v6h6" />
+                                            <line x1="9" y1="13" x2="15" y2="13" />
+                                            <line x1="9" y1="17" x2="15" y2="17" />
+                                            <line x1="9" y1="9" x2="13" y2="9" />
+                                        </svg>
+                                        <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                حقوق با مزایا و پاداش از 
+                                            <span>14,000,000</span>
+                                            <span>تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end items-center">
+                                    <span class="emergency !hidden">فوری</span>
+                                    <span class="normal-post text-c777 text-sm">۹ ساعت پیش</span>
+                                </div>
+                            </div>
+                            <div class="tool-tip ">
+                                <span>14,000,000</span>
+                                <span>تومان</span>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="box">
+                        <a href="#" class="box__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-2.png" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch space-y-6">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 2
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق با مزایا و پاداش از 
+                                                <span>20,000,000</span>
+                                                <span>تومان</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">۹ ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip">
+                                    <span>20,000,000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="box__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-3.jpg" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch space-y-6">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 3
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق توافقی
+                                                <span></span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency !hidden">فوری</span>
+                                        <span class="normal-post text-c777 text-sm">۹ ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="box__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-4.jpg" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch space-y-6">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 4
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق از 
+                                                <span>16،000،000</span>
+                                                <span>تومان</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">1 ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span>16،000،000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="box__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-5.jpg" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch space-y-6">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 5
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق و مزایا طبق اداره کار به همراه بیمه 
+                                                <span></span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">1 ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="box__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-6.png" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch space-y-6">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 6
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق و مزایا طبق اداره کار به همراه بیمه 
+                                                <span></span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">1 ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="box__link group relative">
+                                <div class="flex items-start">
+                                    <img class="w-full rounded-sm" src="public/images/brand/brand-7.png" alt="">
+                                </div>
+                                <div class="flex flex-col justify-between items-stretch space-y-6">
+                                    <h4 class="text-c3ab1e4 font-bold transition-colors group-hover:text-c1988b8 text-sm">کارشناس فروش حضوری</h4>
+                                    <div class="text-c777 text-sm space-y-1">
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 21h18M6 21V9a1 1 0 011-1h10a1 1 0 011 1v12M9 21v-4h2v4M13 21v-4h2v4M9 9h6v4H9V9z" />
+                                            </svg>
+                                             <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                شرکت 7
+                                             </span>
+                                        </p>
+                                        <p class="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap">
+                                                    تهران،تهران
+                                            </span>
+                                        </p>
+                                        <div class="flex items-center gap-1 w-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <path d="M14 2v6h6" />
+                                                <line x1="9" y1="13" x2="15" y2="13" />
+                                                <line x1="9" y1="17" x2="15" y2="17" />
+                                                <line x1="9" y1="9" x2="13" y2="9" />
+                                            </svg>
+                                            <p class="relative grow w-[180px] text-ellipsis overflow-hidden whitespace-nowrap ">
+                                                 حقوق و مزایا طبق اداره کار به همراه بیمه 
+                                                <span></span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end items-center">
+                                        <span class="emergency">فوری</span>
+                                        <span class="normal-post text-c777 hidden">1 ساعت پیش</span>
+                                    </div>
+                                </div>
+                                <div class="tool-tip ">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="start w-full mb-12">
+            <div class="container">
+                <div class="w-full bg-cf9f9f9 pl-10 pt-0 pr-10 pb-10">
+                    <h2 class="start__header pt-5 text-lg text-center font-medium  text-c555">از کجا شروع کنم</h2>
+                    <hr class="mt-[10px] mb-8 ">
+                    <div class="start_wrapper grid mmd:grid-cols-2 mmd:gap-9 lg:grid-cols-4">
+                        <div class="start__box">
+                            <div class="start__icon">
+                                <svg viewBox="0 0 61 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M60.04 1.74292H10.4737C5.24151 1.74292 1 5.98443 1 11.2166V15.708C1 20.9402 5.24151 25.1817 10.4737 25.1817H50.5663C55.7985 25.1817 60.04 29.4232 60.04 34.6554V39.1468C60.04 44.3789 55.7985 48.6205 50.5663 48.6205H10.4737C5.24151 48.6205 1 52.862 1 58.0941V60.0629C1 64.437 4.54591 67.9829 8.92 67.9829V67.9829C13.2941 67.9829 16.84 64.437 16.84 60.0629V58.3956" stroke="#1ABC9C" stroke-width="1.57895" stroke-dasharray="3.16 3.16"/>
+                                    <path d="M39.6605 29.0809L41.034 30.0117L41.8957 28.5938L43.5702 25.8381C44.245 24.7276 44.4208 23.4923 44.1114 22.2321C43.8093 21.0016 43.1244 19.9895 42.0801 19.2728L41.2237 20.5206L42.0801 19.2728L39.4682 17.48C38.3948 16.7433 37.1696 16.502 35.8969 16.7754C34.6242 17.0489 33.6062 17.7721 32.9302 18.8847L34.2462 19.6844L32.9302 18.8847L31.285 21.592L30.5047 22.8761L31.7486 23.7191L39.6605 29.0809ZM40.2004 31.438L40.9761 30.1615L39.7445 29.3162L31.8153 23.874L30.4392 22.9295L29.5725 24.3559L17.1163 44.8543L16.7899 45.3914L16.9219 46.0059L18.3894 52.8364L18.721 54.3801L20.2648 54.0484L26.7265 52.6602L27.3911 52.5174L27.7442 51.9364L40.2004 31.438Z" fill="#1ABC9C" stroke="white" stroke-width="3.15789"/>
+                                </svg>
+                            </div>
+                            <div class="start__content">
+                                <h4 class="start__title pb-[10px] text-c777 lg:text-base font-bold lg:font-medium">ثبت نام در جابینجا</h4>
+                                <p class="start__caption pb-5 text-ca5a5a5 text-sm h-25">میتونی به سادگی با گوگل، لینکدین یا ایمیل‌های دیگه ثبت نام کنی یا اگر قبلا حساب کاربری داشتی وارد شی </p>
+                                <a href="#" class="start__link ">
+                                    ثبت نام
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="my-5 mmd:hidden">
+                        <div class="start__box">
+                            <div class="start__icon">
+                                <svg viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="33.4912" cy="33.9008" r="32.3684" stroke="#B3A0FF" stroke-width="1.57895" stroke-dasharray="3.16 3.16"/>
+                                    <path d="M44.8117 41.3981C43.4124 40.4882 41.8989 39.7438 40.2749 39.1638C38.1096 38.3905 35.8454 38.0061 33.4912 38.0061C31.1371 38.0061 28.8728 38.3905 26.7075 39.1638C25.0835 39.7438 23.57 40.4882 22.1708 41.3981C21.5921 40.5429 21.1136 39.6127 20.7354 38.6043C20.1902 37.1503 19.9123 35.5865 19.9123 33.9008C19.9123 30.1168 21.2242 26.9429 23.8788 24.2883C26.5333 21.6338 29.7072 20.3219 33.4912 20.3219C37.2752 20.3219 40.4491 21.6338 43.1037 24.2883C45.7583 26.9429 47.0702 30.1168 47.0702 33.9008C47.0702 35.5865 46.7923 37.1503 46.247 38.6043C45.8689 39.6127 45.3903 40.5429 44.8117 41.3981ZM27.6616 34.9936C29.2465 36.5785 31.2234 37.3745 33.4912 37.3745C35.759 37.3745 37.736 36.5785 39.3209 34.9936C40.9057 33.4087 41.7017 31.4318 41.7017 29.164C41.7017 26.8961 40.9057 24.9192 39.3209 23.3343C37.736 21.7494 35.759 20.9534 33.4912 20.9534C31.2234 20.9534 29.2465 21.7494 27.6616 23.3343C26.0767 24.9192 25.2807 26.8961 25.2807 29.164C25.2807 31.4318 26.0767 33.4087 27.6616 34.9936ZM25.4762 52.8058C27.9877 53.8895 30.6647 54.4271 33.4912 54.4271C36.3178 54.4271 38.9948 53.8895 41.5063 52.8058C43.9871 51.7353 46.1608 50.2747 48.013 48.4226C49.8651 46.5704 51.3257 44.3967 52.3962 41.9158C53.4799 39.4044 54.0175 36.7274 54.0175 33.9008C54.0175 31.0742 53.4799 28.3972 52.3962 25.8858C51.3257 23.4049 49.8651 21.2312 48.013 19.3791C46.1608 17.5269 43.9871 16.0663 41.5063 14.9958C38.9948 13.9121 36.3178 13.3745 33.4912 13.3745C30.6647 13.3745 27.9877 13.9121 25.4762 14.9958C22.9953 16.0663 20.8216 17.5269 18.9695 19.3791C17.1173 21.2312 15.6567 23.4049 14.5862 25.8858C13.5025 28.3972 12.9649 31.0742 12.9649 33.9008C12.9649 36.7274 13.5025 39.4044 14.5862 41.9158C15.6567 44.3967 17.1173 46.5704 18.9695 48.4226C20.8216 50.2747 22.9953 51.7353 25.4762 52.8058Z" fill="#B3A0FF" stroke="white" stroke-width="3.15789"/>
+                                </svg>
+                            </div>
+                            <div class="start__content">
+                                <h4 class="start__title pb-[10px] text-c777 lg:text-base font-bold lg:font-medium">ساخت یا آپلود رزومه</h4>
+                                <p class="start__caption pb-5 text-ca5a5a5 text-sm h-25">با رزومه‌ساز استاندارد جابینجا در کمترین زمان رزومه‌ات رو بساز یا اگر فایل رزومه‌ی آماده داری آپلود کن </p>
+                                <a href="#" class="start__link">
+                                    ساخت رزومه
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="my-5 mmd:hidden">
+                        <div class="start__box">
+                            <div class="start__icon">
+                                <svg viewBox="0 0 61 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66666 66.4798V11.1029C1.66666 5.93354 5.85727 1.74292 11.0267 1.74292H22.5991C27.7684 1.74292 31.9591 5.93353 31.9591 11.1029V57.1198C31.9591 62.2891 36.1497 66.4798 41.3191 66.4798H50.7277C55.8971 66.4798 60.0877 62.2891 60.0877 57.1198V1.74292" stroke="#F9A60B" stroke-width="1.57895" stroke-dasharray="3.16 3.16"/>
+                                    <path d="M49.8133 55.07C51.2438 56.5005 53.5632 56.5005 54.9937 55.07C56.4242 53.6394 56.4242 51.3201 54.9937 49.8896L46.1492 41.0452C45.083 39.9789 44.8776 38.0579 45.5738 36.1185C46.1302 34.5686 46.4035 32.931 46.4035 31.2166C46.4035 26.9831 44.9194 23.3417 41.9674 20.3896C39.0153 17.4375 35.3739 15.9535 31.1403 15.9535C26.9068 15.9535 23.2654 17.4375 20.3133 20.3896C17.3612 23.3417 15.8772 26.9831 15.8772 31.2166C15.8772 35.4502 17.3612 39.0915 20.3133 42.0436C23.2654 44.9957 26.9068 46.4798 31.1403 46.4798C32.8547 46.4798 34.4923 46.2065 36.0422 45.6501C37.9816 44.9539 39.9026 45.1593 40.9689 46.2255L49.8133 55.07ZM36.7344 36.8107C35.1918 38.3533 33.3579 39.1114 31.1403 39.1114C28.9227 39.1114 27.0889 38.3533 25.5463 36.8107C24.0037 35.268 23.2456 33.4342 23.2456 31.2166C23.2456 28.999 24.0037 27.1652 25.5463 25.6226C27.0889 24.0799 28.9227 23.3219 31.1403 23.3219C33.3579 23.3219 35.1918 24.0799 36.7344 25.6226C38.277 27.1652 39.0351 28.999 39.0351 31.2166C39.0351 33.4342 38.277 35.268 36.7344 36.8107Z" fill="#F9A60B" stroke="white" stroke-width="3.15789"/>
+                                </svg>
+                            </div>
+                            <div class="start__content">
+                                <h4 class="start__title pb-[10px] text-c777 lg:text-base font-bold lg:font-medium">جستجوی مشاغل</h4>
+                                <p class="start__caption pb-5 text-ca5a5a5 text-sm h-25">می‌تونی عنوان شغلی یا نام شرکتی که می‌خوای رو در قسمت جستجو وارد کنی و آگهی‌ها رو ببینی </p>
+                                <a href="#" class="start__link">
+                                     جستجو در مشاغل
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="my-5 mmd:hidden">
+                        <div class="start__box">
+                            <div class="start__icon">
+                                <svg viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.0771 34.6761C12.6252 56.5117 39.8638 68.6414 55.4286 50.8499C75.0794 28.3877 35.837 -11.3835 11.8469 8.79755C-4.49603 22.5457 -0.605009 50.0409 11.847 57.3192" stroke="#3AB0E4" stroke-width="1.57895" stroke-dasharray="3.16 3.16"/>
+                                    <path d="M39.5422 42.5644L41.5573 43.8272L41.9391 41.48L47.3875 7.98849L47.9897 4.28715L44.9213 6.44303L17.1576 25.9505L15.2118 27.3176L17.2269 28.5804L39.5422 42.5644ZM26.8526 27.0009L39.1712 18.3594L36.7663 33.2133L34.9461 32.0727L37.7164 23.5657L35.1204 21.9389L28.6727 28.1415L26.8526 27.0009Z" fill="#3AB0E4" stroke="white" stroke-width="3.15789"/>
+                                </svg>
+                            </div>
+                            <div class="start__content">
+                                <h4 class="start__title pb-[10px] text-c777 lg:text-base font-bold lg:font-medium">ارسال درخواست شغلی</h4>
+                                <p class="start__caption pb-5 text-ca5a5a5 text-sm h-25">جزییات آگهی رو با دقت بخون و اگر شرایطش با سابقه شغلیت هماهنگ بود، رزومه‌ات رو براشون ارسال کن </p>
+                                <a href="#" class="start__link">
+                                    سوالات متداول کارجویان 
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="companies w-full  mb-12">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class=" text-c555text-base text-c555  font-medium ">آشنایی با شرکت‌ها </h3>
+                    <a href="#" class="flex items-center gap-px font-bold  text-sm text-c3ab1e4 hover:text-c1988b8 transition-colors">
+                        <span>مشاهده همه</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="swiper companySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-1.png">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/1.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-2.png">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/2.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-3.jpg">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/3.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-4.jpg">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/4.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-5.jpg">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/5.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-6.png">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/6.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-7.png">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/7.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-8.png">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/8.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="company-box">
+                                <div class="company-header ">
+                                    <img class="company-brand" src="public/images/brand/brand-9png.png">
+                                    <div class="grow">
+                                        <h4 class="company-title">
+                                            <a href="#" class="block w-full">همکاران سیستم</a>
+                                        </h4>
+                                        <p class="company-subTitle">کامپیوتر،من آوری و اطلاعات</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="company-page">
+                                    <img class="company-image " src="public/images/company/9.jpg" alt="">
+                                </a>
+                                <p class="company-caption">متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت متن نمونه برای معرفی شرکت </p>
+                                <hr>
+                                <ul class="company-list space-y-[10px]">
+                                    <li class="company-item">
+                                        <span class="company-badge">1</span>
+                                        محبوبیت میان کارجویان
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">8</span>
+                                        تعداد و تنوع فرصتهای شغلی
+                                    </li>
+                                    <li class="company-item">
+                                        <span class="company-badge">10</span>
+                                        بررسی رزومه های دریافتی   
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="company-footer">
+                                    <a href="#" class="company-badge">6 شغل فعال</a>
+                                    <a href="#" class="company-link ">
+                                        صفحه شرکت
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination !hidden lg:!block !relative !mt-8"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-category w-full mb-12 mmd:bg-cf9f9f9">
+            <div class="container">
+                <div class="category-section w-full bg-cf9f9 rounded-[5px] pr-5 max-w-[1140px] mx-auto bg-cf9f9f9">
+                    <h4 class="pt-5 text-c555 text-sm mmd:text-center w-full font-bold md:text-base lg:text-lg  lg:font-medium">لیست مشاغل جابینجا</h4>
+                    <hr class="mt-[10px] mb-10 !w-[98%] mmd:!w-full">
+                    <div class="mobile-category-wrapper pb-5 pl-2 mmd:hidden justify-between lg:justify-center gap-20">
+                        <div class="mmd:w-50 relative overflow-hidden transition-all" style="max-height: 28px;">
+                            <div class="relative pb-6  ">
+                                <button type="button" class="mobile-category__btn-toggle cursor-pointer w-full flex items-center justify-between">
+                                    <span class="text-c555 font-medium text-sm">جستجوهای پرطرفدار</span>
+                                    <span class="size-6 flex items-center justify-center">
+                                        <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform  w-6 h-[25px]">
+                                            <path d="M18 10.8235L12 16.8235L6 10.8235L7.4 9.42349L12 14.0235L16.6 9.42349L18 10.8235Z" fill="#555555"/>
+                                        </svg> 
+                                    </span>
+                                </button>
+                                <ul class="mobile-category__list pt-[18px]  overflow-hidden w-full" style="max-height: 318px;">
+                                    <li class=" w-full pb-5"><a href="#" class="text-sm">دورکاری</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویسی فرانت‌اند</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویسی بک‌اند</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">طراح UI/UX</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس سئو</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">بازاریابی دیجیتال</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">حسابداری</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیریت منابع انسانی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">ادمین شبکه‌های اجتماعی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تحلیل‌گر داده</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیریت پروژه</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مهندس برق</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مهندس مکانیک</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس فروش</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس پایتون</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس جاوااسکریپت</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">React Developer</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر مارکتینگ</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس پشتیبانی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فروشگاه اینترنتی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تولید محتوا</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">آشپز</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس بیمه</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">پشتیبانی فنی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فریلنسر طراحی سایت</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تحصیل‌کرده MBA</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">توسعه‌دهنده موبایل</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر عامل</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس حقوقی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر بازرگانی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس کنترل کیفیت</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر مالی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">نقشه‌بردار</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">پرستار</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">معلم خصوصی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">راننده پیک</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">انباردار</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس وردپرس</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فروش حضوری</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تایپیست</a></li>
+                                </ul>
+                                <a class="mobile-category__more-link w-full h-6 absolute bottom-0 left-0 right-0 cursor-pointer flex items-center text-c3ab1e4 hover:text-c1988b8 transition-colors text-sm font-bold">
+                                    <span>موارد بیشتر</span>
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.5" class=" w-[18px] h-[19px]">
+                                        <path d="M13.5 8.24292L9 12.7429L4.5 8.24292L5.55 7.19292L9 10.6429L12.45 7.19292L13.5 8.24292Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="my-5 mmd:hidden !w-[98%]">
+                        <div class="mmd:w-50 relative overflow-hidden transition-all" style="max-height: 28px;">
+                            <div class="relative pb-6  ">
+                                <button type="button" class="mobile-category__btn-toggle cursor-pointer w-full flex items-center justify-between">
+                                    <span class="text-c555 font-medium text-sm">بر اساس استان</span>
+                                    <span class="size-6 flex items-center justify-center">
+                                        <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform  w-6 h-[25px]">
+                                            <path d="M18 10.8235L12 16.8235L6 10.8235L7.4 9.42349L12 14.0235L16.6 9.42349L18 10.8235Z" fill="#555555"/>
+                                        </svg> 
+                                    </span>
+                                </button>
+                                <ul class="mobile-category__list pt-[18px]  overflow-hidden w-full" style="max-height: 318px;">
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">آذربایجان شرقی</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">آذربایجان غربی</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">اردبیل</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">اصفهان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">البرز</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">ایلام</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">بوشهر</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تهران</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">چهارمحال و بختیاری</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">خراسان جنوبی</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">خراسان رضوی</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">خراسان شمالی</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">خوزستان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">زنجان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">سمنان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">سیستان و بلوچستان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فارس</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">قزوین</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">قم</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کردستان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کرمان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کرمانشاه</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کهگیلویه و بویراحمد</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">گلستان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">گیلان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">لرستان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مازندران</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مرکزی</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">هرمزگان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">همدان</a></li>
+                                    <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">یزد</a></li> 
+                                </ul>
+                                <a class="mobile-category__more-link w-full h-6 absolute bottom-0 left-0 right-0 cursor-pointer flex items-center text-c3ab1e4 hover:text-c1988b8 transition-colors text-sm font-bold">
+                                    <span>موارد بیشتر</span>
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.5" class=" w-[18px] h-[19px]">
+                                        <path d="M13.5 8.24292L9 12.7429L4.5 8.24292L5.55 7.19292L9 10.6429L12.45 7.19292L13.5 8.24292Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="my-5 mmd:hidden !w-[98%]">
+                        <div class="mmd:w-50 relative overflow-hidden transition-all" style="max-height: 28px;">
+                            <div class="relative pb-6  ">
+                                <button type="button" class="mobile-category__btn-toggle cursor-pointer w-full flex items-center justify-between">
+                                    <span class="text-c555 font-medium text-sm">بر اساس دسته بندی</span>
+                                    <span class="size-6 flex items-center justify-center">
+                                        <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform  w-6 h-[25px]">
+                                            <path d="M18 10.8235L12 16.8235L6 10.8235L7.4 9.42349L12 14.0235L16.6 9.42349L18 10.8235Z" fill="#555555"/>
+                                        </svg> 
+                                    </span>
+                                </button>
+                                <ul class="mobile-category__list pt-[18px]  overflow-hidden w-full" style="max-height: 318px;">
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">دورکاری</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویسی فرانت‌اند</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویسی بک‌اند</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">طراح UI/UX</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس سئو</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">بازاریابی دیجیتال</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">حسابداری</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیریت منابع انسانی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">ادمین شبکه‌های اجتماعی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تحلیل‌گر داده</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیریت پروژه</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مهندس برق</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مهندس مکانیک</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس فروش</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس پایتون</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس جاوااسکریپت</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">React Developer</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر مارکتینگ</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس پشتیبانی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فروشگاه اینترنتی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تولید محتوا</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">آشپز</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس بیمه</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">پشتیبانی فنی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فریلنسر طراحی سایت</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تحصیل‌کرده MBA</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">توسعه‌دهنده موبایل</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر عامل</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس حقوقی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر بازرگانی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس کنترل کیفیت</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر مالی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">نقشه‌بردار</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">پرستار</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">معلم خصوصی</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">راننده پیک</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">انباردار</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس وردپرس</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فروش حضوری</a></li>
+                                    <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تایپیست</a></li>
+                                </ul>
+                                <a class="mobile-category__more-link w-full h-6 absolute bottom-0 left-0 right-0 cursor-pointer flex items-center text-c3ab1e4 hover:text-c1988b8 transition-colors text-sm font-bold">
+                                    <span>موارد بیشتر</span>
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.5" class=" w-[18px] h-[19px]">
+                                        <path d="M13.5 8.24292L9 12.7429L4.5 8.24292L5.55 7.19292L9 10.6429L12.45 7.19292L13.5 8.24292Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-category-wrapper relative hidden mmd:flex items-start justify-between lg:justify-center gap-15 w-full xl:gap-20 2xl:gap-30 overflow-hidden pb-[p1px] transition-all" style="max-height: 404px;">
+                        <div class="w-50">
+                            <h4 class="text-c555 text-base font-medium pb-5">جستجوهای پرطرفدار</h4>
+                            <ul class="w-full">
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">دورکاری</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویسی فرانت‌اند</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویسی بک‌اند</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">طراح UI/UX</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس سئو</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">بازاریابی دیجیتال</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">حسابداری</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیریت منابع انسانی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">ادمین شبکه‌های اجتماعی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تحلیل‌گر داده</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیریت پروژه</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مهندس برق</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مهندس مکانیک</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس فروش</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس پایتون</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس جاوااسکریپت</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">React Developer</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر مارکتینگ</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس پشتیبانی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فروشگاه اینترنتی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تولید محتوا</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">آشپز</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس بیمه</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">پشتیبانی فنی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فریلنسر طراحی سایت</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تحصیل‌کرده MBA</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">توسعه‌دهنده موبایل</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر عامل</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس حقوقی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">انباردار</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس وردپرس</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فروش حضوری</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تایپیست</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-50">
+                            <h4 class="text-c555 text-base font-medium pb-5">بر اساس استان</h4>
+                            <ul class="w-full">
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">آذربایجان شرقی</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">آذربایجان غربی</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">اردبیل</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">اصفهان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">البرز</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">ایلام</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">بوشهر</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تهران</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">چهارمحال و بختیاری</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">خراسان جنوبی</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">خراسان رضوی</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">خراسان شمالی</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">خوزستان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">زنجان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">سمنان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">سیستان و بلوچستان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فارس</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">قزوین</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">قم</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کردستان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کرمان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کرمانشاه</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کهگیلویه و بویراحمد</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">گلستان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">گیلان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">لرستان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مازندران</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مرکزی</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">هرمزگان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">همدان</a></li>
+                                <li class="w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">یزد</a></li> 
+                            </ul>
+                        </div>
+                        <div class="w-50">
+                            <h4 class="text-c555 text-base font-medium pb-5">بر اساس دسته بندی</h4>
+                            <ul class="w-full">
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">دورکاری</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویسی فرانت‌اند</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویسی بک‌اند</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">طراح UI/UX</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس سئو</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">بازاریابی دیجیتال</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">حسابداری</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیریت منابع انسانی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">ادمین شبکه‌های اجتماعی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تحلیل‌گر داده</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیریت پروژه</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مهندس برق</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مهندس مکانیک</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس فروش</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس پایتون</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس جاوااسکریپت</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">React Developer</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر مارکتینگ</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس پشتیبانی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فروشگاه اینترنتی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تولید محتوا</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">آشپز</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس بیمه</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">پشتیبانی فنی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فریلنسر طراحی سایت</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تحصیل‌کرده MBA</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">توسعه‌دهنده موبایل</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر عامل</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس حقوقی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر بازرگانی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">کارشناس کنترل کیفیت</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">مدیر مالی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">نقشه‌بردار</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">پرستار</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">معلم خصوصی</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">راننده پیک</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">انباردار</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">برنامه‌نویس وردپرس</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">فروش حضوری</a></li>
+                                <li class=" w-full pb-5"><a href="#" class="text-c777 hover:text-c555 transition-colors font-medium text-sm">تایپیست</a></li>
+                            </ul>
+                        </div>
+                        <div class="absolute h-[91px] bg-cf9f9f9 w-full bottom-0 left-0 right-0 flex items-center justify-stretch">
+                            <a class="desktop-link-more w-full cursor-pointer flex flex-col justify-center items-center text-c3ab1e4 hover:text-c1988b8 transition-colors">
+                                <span class="font-bold text-sm">موارد بیشتر</span> 
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.5" class=" w-[18px] h-[19px] transition-transform">
+                                    <path d="M13.5 8.24292L9 12.7429L4.5 8.24292L5.55 7.19292L9 10.6429L12.45 7.19292L13.5 8.24292Z" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                            <div class="w-full absolute left-0 right-0 h-0 border-b border-gray-300 top-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blug w-full mb-12">
+    <div class="container">
+        <div class="section-header">
+            <h3 class=" text-c555 text-base   font-medium ">از وبلاگ جابینجا</h3>
+            <a href="#" class="flex items-center gap-px font-bold  text-sm text-c3ab1e4 hover:text-c1988b8 transition-colors">
+                <span>مشاهده همه</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                    <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="w-full max-w-[1280px] mx-auto">
+            <div class="swiper blugSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <a class="block w-full" href="#">
+                            <img class="w-full object-cover rounded-[5px]" src="public/images/1.webp">
+                        </a>
+                        <h4 class="w-full h-[54px] mt-5">
+                            <a class="block w-full h-full text-c555 text-lg line-clamp-2 font-medium" href="#">بررسی نقش منابع انسانی در توسعه سازمان</a>
+                        </h4>
+                        <p class="mt-[10px] text-ca5a5a5 line-clamp-4 xl:line-clamp-2 text-sm">
+                            منابع انسانی قلب تپنده هر سازمان است و نقش آن فراتر از جذب و استخدام نیروی کار می‌باشد. این واحد مسئول شناسایی، پرورش و حفظ استعدادهاست تا سازمان بتواند در مسیر اهداف خود حرکت کند. با برنامه‌ریزی دقیق آموزشی، منابع انسانی مهارت‌های کارکنان را به‌روز نگه می‌دارد و زمینه رشد فردی و جمعی را فراهم می‌کند. همچنین با ایجاد محیطی پویا و انگیزشی، بهره‌وری و رضایت شغلی را افزایش می‌دهد. مدیریت صحیح منابع انسانی به ایجاد فرهنگ سازمانی سالم، کاهش تعارضات و بهبود روابط کاری کمک می‌کند. علاوه بر این، این واحد در تحلیل نیازهای سازمان و هماهنگ‌سازی نیروی انسانی با استراتژی‌های کلان نقش اساسی دارد. منابع انسانی با پایش عملکرد و ارائه بازخورد سازنده، مسیر پیشرفت کارکنان را روشن می‌سازد. در نهایت، سرمایه‌گذاری بر روی منابع انسانی به معنای سرمایه‌گذاری بر آینده سازمان است، چرا که نیروی انسانی توانمند، مهم‌ترین مزیت رقابتی هر مجموعه محسوب می‌شود.
+                        </p>
+                        <a class="w-full mt-5 flex items-center justify-start text-c3ab1e4 hover:text-c1988b8 transition-colors font-bold text-sm" href="#">
+                            <span>مشاهده بیشتر</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="swiper-slide ">
+                        <a class="block w-full" href="#">
+                            <img class="w-full object-cover rounded-[5px]" src="public/images/2.webp">
+                        </a>
+                        <h4 class="w-full h-[54px] mt-5">
+                            <a class="block w-full h-full text-c555 text-lg line-clamp-2 font-medium" href="#">تکنیکهای ارزیابی عملکرد کارکنان</a>
+                        </h4>
+                        <p class="mt-[10px] text-ca5a5a5 line-clamp-4 xl:line-clamp-2 text-sm">
+                            ارزیابی عملکرد کارکنان یکی از مهم‌ترین مراحل مدیریت منابع انسانی است که به کمک آن می‌توان نقاط قوت و ضعف افراد را شناخت و به بهبود کیفیت کار کمک کرد. برای این کار روش‌های مختلفی وجود دارد که هر کدام مزایا و کاربردهای خاص خود را دارند. بعضی از این روش‌ها شامل گرفتن بازخورد از مدیران، همکاران و حتی خود کارکنان است تا تصویر کامل‌تری از عملکرد فرد به دست آید. همچنین مشاهده رفتارها و نتایج کاری که در طول زمان ثبت می‌شود، می‌تواند اطلاعات دقیق‌تری فراهم کند. این ارزیابی‌ها به مدیران کمک می‌کند تا نقاط قابل بهبود را شناسایی کرده و برنامه‌های آموزشی یا انگیزشی مناسبی ارائه دهند. در نهایت هدف از ارزیابی عملکرد، رشد و توسعه فردی کارکنان و افزایش بهره‌وری کل سازمان است. استفاده از ترکیب چند روش مختلف باعث می‌شود ارزیابی عادلانه‌تر و دقیق‌تر انجام شود و اعتماد کارکنان نیز بیشتر جلب گردد.
+                        </p>
+                        <a class="w-full mt-5 flex items-center justify-start text-c3ab1e4 hover:text-c1988b8 transition-colors font-bold text-sm" href="#">
+                            <span>مشاهده بیشتر</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="swiper-slide ">
+                        <a class="block w-full" href="#">
+                            <img class="w-full object-cover rounded-[5px]" src="public/images/3.webp">
+                        </a>
+                        <h4 class="w-full h-[54px] mt-5">
+                            <a class="block w-full h-full text-c555 text-lg line-clamp-2 font-medium" href="#">آموزش تکنیکهای مصاحبه شغلی برای مدیران منابع انسانی</a>
+                        </h4>
+                        <p class="mt-[10px] text-ca5a5a5 line-clamp-4 xl:line-clamp-2 text-sm">
+                            آموزش تکنیک‌های مصاحبه شغلی برای مدیران منابع انسانی نقش مهمی در جذب نیروی کار مناسب و موفقیت سازمان دارد. ابتدا باید هدف از مصاحبه را به خوبی مشخص کرد تا سوالات مرتبط و هدفمند پرسیده شوند. یکی از تکنیک‌های مهم، آماده‌سازی سوالات رفتاری است که به مدیر کمک می‌کند تا رفتارها و واکنش‌های واقعی متقاضی را در شرایط کاری بسنجند. همچنین، توجه به زبان بدن و نحوه بیان فرد اطلاعات زیادی درباره شخصیت و اعتماد به نفس او می‌دهد. مدیران باید مهارت شنیداری خوبی داشته باشند و اجازه دهند متقاضی به طور کامل پاسخ دهد تا بتوانند تحلیل بهتری داشته باشند. ایجاد فضایی دوستانه و محترمانه باعث می‌شود متقاضی راحت‌تر صحبت کند و اطلاعات دقیق‌تری ارائه دهد. در نهایت، ثبت نکات مهم و مقایسه آن‌ها با نیازهای سازمان به مدیر کمک می‌کند تا بهترین تصمیم را بگیرد. تمرین مستمر و دریافت بازخورد نیز به بهبود مهارت‌های مصاحبه کمک شایانی می‌کند.
+                        </p>
+                        <a class="w-full mt-5 flex items-center justify-start text-c3ab1e4 hover:text-c1988b8 transition-colors font-bold text-sm" href="#">
+                            <span>مشاهده بیشتر</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+    </main>
+    <footer class="mFooter w-full bg-c444 pb-8 mmd:hidden">
+        <div class="mFooter__dropdown-wrapper w-full">
+            <div class="mFooter-dropdown w-full overflow-hidden">
+                <button class="mFooter-dropdown__btn text-sm cursor-pointer outline-0 focus:outline-0 w-full px-[15px] flex items-center justify-between h-[50px] bg-c555 transition-colors text-cf0f0f0 font-medium border-b border-c666 hover:bg-c505050">
+                    <span>کارجویان</span>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="w-6 h-6 transition-transform">
+                        <path d="M18 10.8235L12 16.8235L6 10.8235L7.4 9.42349L12 14.0235L16.6 9.42349L18 10.8235Z"/>
+                    </svg>
+                </button>
+                <ul class="mFooter-dropdown__list w-full overflow-hidden transition-all" style="max-height: 0;">
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            سوالات متداول کارجویان
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            قوانین و مقررات کارجویان
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            لیست مشاغل
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            آگهی های استخدام
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            ورود / ثبت نام کارجو
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            ایمیل های اطلاع رسانی
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            رزومه ساز آنلاین
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            آشنایی با شرکتها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mFooter-dropdown w-full overflow-hidden">
+                <button class="mFooter-dropdown__btn text-sm cursor-pointer outline-0 focus:outline-0 w-full px-[15px] flex items-center justify-between h-[50px] bg-c555 transition-colors text-cf0f0f0 font-medium border-b border-c666 hover:bg-c505050">
+                    <span>کارفرمایان</span>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="w-6 h-6 transition-transform">
+                        <path d="M18 10.8235L12 16.8235L6 10.8235L7.4 9.42349L12 14.0235L16.6 9.42349L18 10.8235Z"/>
+                    </svg>
+                </button>
+                <ul class="mFooter-dropdown__list w-full overflow-hidden transition-all" style="max-height: 0;">
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            سوالات متداول کارفرمایان
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            قوانین و مقررات کارفرمایان
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            درج آگهی استخدام
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            ورود به بخش کارفرمایان
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            تعرفه انتشار آگهی
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            سوالات متداول
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mFooter-dropdown w-full overflow-hidden">
+                <button class="mFooter-dropdown__btn text-sm cursor-pointer outline-0 focus:outline-0 w-full px-[15px] flex items-center justify-between h-[50px] bg-c555 transition-colors text-cf0f0f0 font-medium border-b border-c666 hover:bg-c505050">
+                    <span>جابینجا</span>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="w-6 h-6 transition-transform">
+                        <path d="M18 10.8235L12 16.8235L6 10.8235L7.4 9.42349L12 14.0235L16.6 9.42349L18 10.8235Z"/>
+                    </svg>
+                </button>
+                <ul class="mFooter-dropdown__list w-full overflow-hidden transition-all" style="max-height: 0;">
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            تماس با جابینجا
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            جابینجا در رسانه ها
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            راهنمای استفاده برای کارجویان
+                        </a>
+                    </li>
+                    <li class="mFooter-dropdown__item w-full">
+                        <a href="#" class="mFooter-dropdown__link flex items-center px-[15px] text-cf0f0f0 text-sm font-light w-full h-10 bg-c666 transition-colors border-b border-c555 hover:bg-c505050">
+                            وبلاگ
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        <div class="pt-[10px] w-full flex justify-center items-start">
+            <div class="w-[260px] mt-5">
+                <ul class="w-full flex items-center justify-around">
+                    <li>
+                        <a href="#" class="block size-[35px]">
+                            <img src="public/images/social.png" class="w-full">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block size-[35px]">
+                            <img src="public/images/twitter.png" class="w-full">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block size-[35px]">
+                            <img src="public/images/telegram.png" class="w-full">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block size-[35px]">
+                            <img src="public/images/linkedin.png" class="w-full">
+                        </a>
+                    </li>
+                </ul>
+                <div class="w-full flex justify-center">
+                    <img src="public/images/logo-gray.webp" class="w-14 h-5 mt-[30px]">
+                </div>
+                <p class="mt-[5px] text-center text-ca5a5a5 tracking-wide font-medium leading-relaxed text-xs">
+                    با معتبرترین شرکت‌های کشور آشنا شوید و محل کار آینده خود را هوشمندانه انتخاب کنید.
+                </p>
+                <p class="mt-5 text-center text-ca5a5a5 text-xs">
+                    © ۱۴۰۴ - تمامی حقوق برای جابینجا محفوظ است. 
+                </p>
+            </div>
+        </div>
+    </footer>
+    <footer class="Dfooter w-full bg-c444 pb-8 pt-[30px] hidden mmd:block">
+        <div class="container">
+            <div class="grid grid-cols-3 grid-rows-[auto_auto] lg:grid-cols-4 lg:grid-rows-1 ">
+                <div class="row-start-2 row-span-1 col-start-1 col-span-4  lg:row-start-1 lg:col-start-4 lg:col-span-1 w-[260px] mx-auto mt-5 lg:w-full lg:mt-0 lg:px-[10px]">
+                    <h4 class="hidden lg:block font-medium h-10 text-c999 border-b border-c999 leading-10 text-sm">جابینجا در شبکه های اجتماعی</h4>
+                    <ul class="w-full flex items-center justify-around lg:justify-between lg:pt-5">
+                    <li>
+                        <a href="#" class="block size-[35px]">
+                            <img src="public/images/social.png" class="w-full">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block size-[35px]">
+                            <img src="public/images/twitter.png" class="w-full">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block size-[35px]">
+                            <img src="public/images/telegram.png" class="w-full">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block size-[35px]">
+                            <img src="public/images/linkedin.png" class="w-full">
+                        </a>
+                    </li>
+                </ul>
+                <div class="w-full flex justify-center">
+                    <img src="public/images/logo-gray.webp" class="w-14 h-5 mt-[30px]">
+                </div>
+                <p class="mt-[5px] text-center text-ca5a5a5 tracking-wide font-medium leading-relaxed text-xs">
+                    با معتبرترین شرکت‌های کشور آشنا شوید و محل کار آینده خود را هوشمندانه انتخاب کنید.
+                </p>
+                </div>
+                <div class="px-[10px]">
+                    <h4 class="font-medium h-10 text-c999 border-b border-c999 leading-10 tracking-wide text-sm">کارجویان</h4>
+                    <ul class="mt-[10px] w-full">
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">سوالات متداول کارجویان</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">قوانین و مقررات کارجویان</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">لیست مشاغل</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">آگهی های استخدام</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">ورود / ثبت نام کارجو</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">ایمیل های اطلاع رسانی</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">رزومه ساز آنلاین</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">آشنایی با شرکت ها</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-[10px]">
+                    <h4 class="font-medium h-10 text-c999 border-b border-c999 leading-10 tracking-wide text-sm">کارفرمایان</h4>
+                    <ul class="mt-[10px] w-full">
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">سوالات متداول کارفرمایان</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">قوانین و مقررات کارفرمایان
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">درج آگهی استخدام</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">ورود به بخش کارفرمایان</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">تعرفه انتشار آگهی</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">سوالات متداول</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-[10px]">
+                    <h4 class="font-medium h-10 text-c999 border-b border-c999 leading-10 tracking-wide text-sm">جابینجا>
+                    <ul class="mt-[10px] w-full">
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">تماس با جابینجا</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">جابینجا در رسانه ها</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">راهنمای استفاده برای کارجویان</a>
+                        </li>
+                        <li class="h-[30px] w-full flex justify-start">
+                            <a href="#" class="flex h-full items-center transition-colors text-cf0f0f0 text-sm font-light tracking-wide hover:text-cf9a60b">وبلاگ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full text-center mt-5 text-ca5a5a5 text-xs">
+                © ۱۴۰۴ - تمامی حقوق برای جابینجا محفوظ است. 
+            </div>
+        </div>
+    </footer>
+    <div id="cover" class="fixed top-0 left-0 w-full bg-gray-900/40  z-40 h-0 opacity-0 overflow-hidden invisible transition-opacity duration-300"></div>
+    <script src="public/js/plugins/choices.js"></script>
+    <script src="public/js/plugins/swiper-bundle.min.js"></script>
+    <script src="public/js/script.js"></script>
+</body>
+</html>

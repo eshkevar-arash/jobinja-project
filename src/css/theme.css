@@ -1,0 +1,6 @@
+:root{
+        /* --cl-sabz:green; */
+}
+:root[data-theme = "dark"]{
+    /* --cl-sabz:black; */
+}

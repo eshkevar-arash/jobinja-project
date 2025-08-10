@@ -1,0 +1,39 @@
+@import "./fonts.css";
+@import "tailwindcss";
+@import "./base.css";
+@import "./theme.css";
+@import "./utilities.css";
+@import "./components.css";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme{
+    /* --color-sabz: var(--cl-sabz); */
+    /* =====================COLOR============================ */
+    --color-c444: #444;
+    --color-c555:#555;
+    --color-c505050: #505050;
+    --color-c666: #666;
+    --color-cffd68a: #ffd68a;
+    --color-cffcd70: #ffcd70;
+    --color-c222: #222;
+    --color-ce5e5e5: #e5e5e5;
+    --color-c333: #333;
+    --color-c3ab1e4: #3ab1e4;
+    --color-c1988b8: #1988b8;
+    --color-cc93d31:#c93d31;
+    --color-ca5a5a5: #a5a5a5;
+    --color-cf9f9f9: #f9f9f9;
+    --color-c777: #777;
+    --color-c1abc9c: #1abc9c;
+    --color-c1dd3af: #1dd3af;
+    --color-ce9fcf8: #e9fcf8;
+    --color-c008c67: #008c67;
+    --color-cf0f0f0: #f0f0f0;
+    --color-c999: #999;
+    --color-cf9a60b: #f9a60b;
+    --text-xx: 11px;
+    /* =====================FONT============================ */
+    --font-IRANSansX: "IRANSansX", "sans-serif";
+    /* =====================BREAK POINT============================ */
+    --breakpoint-tablet: 1000px;
+    --breakpoint-mmd: 768px;
+}
